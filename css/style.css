@@ -11,9 +11,10 @@
    font-family: sans-serif;
 }
 
+
 .screen-initial, .screen-game, .screen-timer-initial {
    width: 100vw;
-   height: 100vh;
+   height: 100dvh; /* Unidade moderna */
    background-color: #332;
 
    padding: 30px 10px;
