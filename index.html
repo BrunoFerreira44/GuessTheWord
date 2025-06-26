@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>My Document</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="script/script.js"></script>
+   <script defer src="script/timer.js"></script>
+   <script defer src="script/initial-timer.js"></script>
+   <script defer src="script/initial-screen.js"></script>
+   <script defer src="script/buttons.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   <main class="screen-initial">
+      <h2>Guess the Word</h2>
+      <h1 class="button-start slide-in-left">Iniciar</h1>
+      <footer>Developed by: <strong>Bruno Ferreira</strong></footer>
+   </main>
+
+   <main class="screen-timer-initial invisible">
+      <h1 class="timer-initial"></h1>
+   </main>
+
+   <main class="screen-game invisible">
+      <span class="timer">90</span>
+      <h1 class="words-changing"></h1>
+      <div class="box-buttons">
+         <i class="fa-solid fa-xmark cancel"></i>
+         <i class="fa-solid fa-rotate-right retry"></i>
+      </div>
+   </main>
+</body>
+</html>
