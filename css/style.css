@@ -76,8 +76,14 @@
 
 .screen-game > .words-changing {
    font-size: 5rem;
-   text-align: center;
    overflow-wrap: break-word;
+   word-break: break-all; /* Força a quebra em qualquer caractere */
+   hyphens: auto; /* Adiciona hífens quando quebrar (opcional) */
+   max-width: 100%; /* Garante que não ultrapasse a largura do container */
+   padding: 0 10px; /* Adiciona um espaçamento nas laterais */
+   box-sizing: border-box; /* Considera o padding no cálculo da largura */
+   text-align: center;
+   line-height: 1.2; /* Espaçamento entre linhas quando quebrar */
 }
 
 .screen-game .box-buttons {
