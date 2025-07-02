@@ -44,6 +44,7 @@ main.addEventListener('click', () => {
    let index = Math.floor(Math.random() * randomArrWords.length);
    h1.innerText = randomArrWords[index];
    console.log("index: " + index);
+   randomArrWords.splice(index, 1);
 });
 
 

@@ -4,7 +4,8 @@ const myScreenGame = document.querySelector(".screen-game");
 const myScreenInitial = document.querySelector(".screen-initial");
 
 let time = 90;
-setInterval(() => {
+
+function timerUpdateFunc() {
 
    if (time == 0) {
       myScreenGame.classList.add("invisible");
@@ -22,5 +23,6 @@ setInterval(() => {
       time = 90;
       timer.innerHTML = 90;
    }
+}
 
-}, 1000);
+let runTimerUpdate = setInterval(timerUpdateFunc, 1000);
